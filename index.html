@@ -1,204 +1,509 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="styles.css">
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <title>Bootstrap demo</title>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
-        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
-        integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
+        integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous" />
 </head>
+<style>
+    .inner-height {
+        height: 80vh;
+    }
 
-<body>
-    <section>
-        <div id="carouselExample" class="carousel slide">
-            <div class="carousel-inner">
-                <div class="carousel-item active justify-content-center">
-                    <div class=" justify-content-center align-items-center min-vh-100">
-                        <img src="./images/New Job _ Promotion _ Own Business _ Dream Home _ Strong Family _ Healthy Lifestyle _ Dream Vacation.jpg"
-                            class="d-block w-100" style="height: 700px;" alt="...">
-                        <div class="text-center carousel-caption justify-content-center align-items-center">
-                            <h1>Welcome to Shuffle</h1>
-                            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. A veritatis neque harum vero
-                                distinctio, qui exercitationem consectetur iure perferendis quae!</p>
-                        </div>
-                    </div>
+    .hero-caption {
+        top: 40%;
+    }
+
+    .ms {
+        margin-left: -23px;
+    }
+
+    .nav-link:hover {
+        color: rgb(0, 106, 255);
+    }
+</style>
+
+<body class="bg-light">
+    <!-- hero section goes here -->
+    <div id="carouselExampleIndicators" class="carousel slide">
+
+        <div class="carousel-inner inner-height">
+            <div class="carousel-item active inner-height position-relative">
+                <div class="position-absolute  w-100 inner-height  bg-dark bg-opacity-50"></div>
+                <img src="./images/New Job _ Promotion _ Own Business _ Dream Home _ Strong Family _ Healthy Lifestyle _ Dream Vacation.jpg" class=" object-fit-cover d-block w-100 h-100" alt="..." />
+                <div class="carousel-caption d-none d-md-block hero-caption">
+                    <h5>First slide label</h5>
+                    <p>Some representative placeholder content for the first slide.</p>
+                    <button type="button" class="btn btn-outline-success rounded-pill px-5 py-2 text-white">Get Started</button>
                 </div>
-                <div id="carouselExample" class="carousel slide">
-                    <div class="carousel-inner">
-                        <div class="carousel-item active">
-                            <img src="..." class="d-block w-100" alt="...">
-                        </div>
-                        <div class="carousel-item">
-                            <img src="..." class="d-block w-100" alt="...">
-                        </div>
-                        <div class="carousel-item">
-                            <img src="..." class="d-block w-100" alt="...">
-                        </div>
-                    </div>
+            </div>
+            <div class="carousel-item  inner-height position-relative">
+                <div class="position-absolute  w-100 inner-height bg-dark bg-opacity-50"></div>
+                <img src="./images/Software Consulting and Development Company.jpg" class=" object-fit-cover d-block w-100 h-100 " alt="..." />
+                <div class="carousel-caption d-none d-md-block hero-caption">
+                    <h5>First slide label</h5>
+                    <p>Some representative placeholder content for the first slide.</p>
+                    <button type="button" class="btn btn-outline-success rounded-pill px-5 py-2 text-white">Get Started</button>
                 </div>
-                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample"
-                    data-bs-slide="prev">
-                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Previous</span>
-                </button>
-                <button class="carousel-control-next" type="button" data-bs-target="#carouselExample"
-                    data-bs-slide="next">
-                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-                    <span class="visually-hidden">Next</span>
-                </button>
+            </div>
+            <div class="carousel-item  inner-height position-relative">
+                <div class="position-absolute  w-100 inner-height bg-dark bg-opacity-50"></div>
+                <img src="./images/hero.avif" class=" object-fit-cover d-block w-100 h-100" alt="..." />
+                <div class="carousel-caption d-none d-md-block hero-caption">
+                    <h5>First slide label</h5>
+                    <p>Some representative placeholder content for the first slide.</p>
+                    <button type="button" class="btn btn-outline-success rounded-pill px-5 py-2 text-white">Get Started</button>
+                </div>
+            </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="carousel-control-prev-icon ms" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleIndicators"
+            data-bs-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="carousel-control-next-icon ms" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+        </button>
+    </div>
+    <!-- hero section ends here -->
+    <!-- navbar goes here -->
+
+    <nav class=" navbar navbar-expand-lg bg-body-tertiary shadow">
+        <div class="container">
+            <a class="navbar-brand" href="#">Shuffle</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="d-flex justify-content-around" role="search">
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav me-auto py-2 mb-2 mb-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link " aria-current="page" href="#">HOME</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">ABOUT US</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">SERVICES</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">PORTFOLIO</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">TEAM</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
+                                aria-expanded="false">
+                                DROPDOWN
+                            </a>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Action</a></li>
+                                <li><a class="dropdown-item" href="#">Another action</a></li>
+                                <li>
+                                    <hr class="dropdown-divider">
+                                </li>
+                                <li><a class="dropdown-item" href="#">Something else here</a></li>
+                            </ul>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">CONTACT</a>
+                        </li>
+
+                    </ul>
+                </div>
+                </d>
+            </div>
+    </nav>
+    <!-- navbar end here -->
+    <!-- about us starts here -->
+
+    <section class="container my-5 ">
+        <h2 class="text-center">ABOUT US</h2>
+        <p class="text-center mt-3 text-dark-emphasis">Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit
+            earum amet ab, quae libero nesciunt aliquam
+            unde eligendi tenetur odio minima qui repudiandae at quas ex officia perferendis consequuntur quasi
+            doloribus pariatur voluptatum. Facilis, sit numquam velit</p>
+
+        <div class="row mt-4">
+            <div class="col-lg-6 col-sm-12">
+                <img src="./images/aboutus.png" alt="" class="img-fluid">
+            </div>
+            <div class="col-lg-6 col-sm-12">
+                <h4>Lorem ipsum dolor sit amet adipisicing adipisicing adipisicing.</h4>
+                <p class="mt-3">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam at laborum eos nulla
+                    veritatis iste adipisci voluptatum possimus soluta.</p>
+                <p class="mt-4">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quisquam at laborum eos nulla
+                    veritatis iste adipisci voluptatum possimus soluta. Lorem ipsum dolor sit amet consectetur,
+                    adipisicing elit. Ex, reiciendis?</p>
+            </div>
+        </div>
+        <div class="d-flex justify-content-between">
+            <p style="font-size:small;">HTML</p>
+            <p style="font-size: small;">100%</p>
+          </div>
+          <div class="progress rounded-bottom-pill" role="progressbar" aria-label="Success example" aria-valuenow="100"
+            aria-valuemin="0" aria-valuemax="100" style="height: 2vh;">
+            <div class="progress-bar bg-success opacity-75" style="width: 100%"></div>
+          </div>
+          <div class="d-flex justify-content-between">
+            <p class="mt-2" style="font-size: small;">CSS</p>
+            <p class="mt-2" style="font-size: small;">90%</p>
+          </div>
+
+          <div class="progress rounded-bottom-pill" role="progressbar" aria-label="Success example" aria-valuenow="90"
+            aria-valuemin="0" aria-valuemax="100" style="height: 2vh;">
+            <div class="progress-bar bg-success opacity-75" style="width: 90%"></div>
+          </div>
+          <div class="d-flex justify-content-between">
+            <p class="mt-2" style="font-size: small;">JAVASCRIPT</p>
+            <p class="mt-2" style="font-size: small;">75%</p>
+          </div>
+          <div class="progress rounded-bottom-pill" role="progressbar" aria-label="Success example" aria-valuenow="75"
+            aria-valuemin="0" aria-valuemax="100" style="height: 2vh;">
+            <div class="progress-bar bg-success opacity-75" style="width: 75%"></div>
+          </div>
+          <div class="d-flex justify-content-between">
+            <p class="mt-2" style="font-size: small;">PHOTOSHOP</p>
+            <p class="mt-2" style="font-size: small;">55%</p>
+          </div>
+          <div class="progress rounded-bottom-pill" role="progressbar" aria-label="Danger example" aria-valuenow="55"
+            aria-valuemin="0" aria-valuemax="100" style="height: 2vh;">
+            <div class="progress-bar bg-success opacity-75" style="width: 55%"></div>
             </div>
     </section>
-    <section>
-        <nav class="navbar navbar-expand-lg bg-body-tertiary box shadow-lg px-5 mx-5 mt-0">
-            <div class="container-fluid ">
-                <div>
-                    <a class="navbar-brand" href="#">Shuffle</a>
-                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                        data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false"
-                        aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
+    <section class="container-fluid bg-body-secondary mx-auto mx-4 my-5">
+        <div class="row align-items-center pt-5 pb-5 ms-5 me-5">
+          <div class="col-lg-3 col-md-6 col-sm-12">
+            <div class="container bg-light col-md-6 shadow-lg" style="width: 21vw; height: 32vh;">
+              <i class="fas fa-smile mt-4 fs-3 text-success opacity-75"><span class="text-dark"> 232</span></i>
+              <p class="fs-6 fw-light mt-3"><span class="fw-bold">Happy Clients</span> consequnturr quae qui deca rode</p>
+              <p class="text-secondary fw-light">Find out more >></p>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 col-sm-12">
+            <div class="container bg-light col-md-6 shadow-lg" style="width: 21vw; height: 32vh;">
+              <i class="fas fa-smile mt-4 fs-3 text-success opacity-75"><span class="text-dark"> 232</span></i>
+              <p class="fs-6 fw-light mt-3"><span class="fw-bold">Happy Clients</span> consequnturr quae qui deca rode</p>
+              <p class="text-secondary fw-light">Find out more >></p>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 col-sm-12">
+            <div class="container bg-light col-md-6 shadow-lg" style="width: 21vw; height: 32vh;">
+              <i class="fas fa-smile mt-4 fs-3 text-success opacity-75"><span class="text-dark"> 232</span></i>
+              <p class="fs-6 fw-light mt-3"><span class="fw-bold">Happy Clients</span> consequnturr quae qui deca rode</p>
+              <p class="text-secondary fw-light">Find out more >></p>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-6 col-sm-12">
+            <div class="container bg-light col-md-6 shadow-lg" style="width: 21vw; height: 32vh;">
+              <i class="fas fa-smile mt-4 fs-3 text-success opacity-75"><span class="text-dark"> 232</span></i>
+              <p class="fs-6 fw-light mt-3"><span class="fw-bold">Happy Clients</span> consequnturr quae qui deca rode</p>
+              <p class="text-secondary fw-light">Find out more >></p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="container-fluid text-dark ps-5 col-md-12" style="height: 50vh;">
+        <div class="row align-items-center pt-4" style="max-width: 1200px;">
+          <div class="container bg-light  col-12 col-lg-3 col-md-6 col-sm-12 shadow-lg rounded-4"
+            style="width: 22vw; height: 35vh;">
+            <i class="fas fa-globe mt-4 fs-1 text-success"></i>
+            <p class="fs-6 fw-bold mt-4">Lorem Ipsum</p>
+            <p class="text-secondary fw-light">Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+          </div>
+          <div class="container bg-light col-12 col-lg-3 col-md-6 col-sm-12 shadow-lg rounded-4"
+            style="width: 22vw; height: 35vh;">
+            <i class="fas fa-book mt-4 fs-1 text-success"></i>
+            <p class="fs-6 fw-bold mt-4">Sed Ut Perspiciatis</p>
+            <p class="text-secondary fw-light">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nulla?</p>
+          </div>
+          <div class="container bg-light col-12 col-lg-3 col-md-6 col-sm- shadow-lg rounded-4"
+            style="width: 22vw; height: 35vh;">
+            <i class="fas fa-clock mt-4 fs-1 text-success opacity-75"></i>
+            <p class="fs-6 fw-bold mt-4">Magni Dolores</p>
+            <p class="text-secondary fw-light">Lorem ipsum, dolor sit amet consectetur adipisicing elit.</p>
+          </div>
+          <!-- <div class="container bg-light col-12 col-lg-3 col-md-6 col-sm-12 shadow-lg rounded-4"
+            style="width: 22vw; height: 35vh;">
+            <i class="fas fa-earth-america mt-4 fs-1 text-success opacity-75"></i>
+            <p class="fs-6 fw-bold mt-4">Nemo Elim</p>
+            <p class="text-secondary fw-light">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nemo</p>
+          </div> -->
+        </div>
+      </section>
+      <section>
+        <div
+          style="background-image: url(./images/Seguro\ de\ RC\ em\ xeque\ no\ Brasil.jpg); background-repeat: no-repeat; background-size: cover; height: 45vh;">
+          <div class="text-light text-center pt-5">
+            <h4>Call To Action</h4>
+            <p class="mt-2 mb-0">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti in exercitationem at
+              cumque incidunt ipsa voluptate nihil sint eveniet nemo!</p>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing.</p>
+            <button type="button" class="btn btn-primary btn-sm mt-2 border-2 border-success rounded-4"
+              style=" background: none; width: 12%;">Call To Action</button>
+          </div>
+      </section>
+      <section class="container ">
+        <div class="row row-cols-1 row-cols-md-3 g-4  pt-4">
+          <div class="col">
+            <div class="card h-100 border-0 shadow-lg rounded-0">
+              <img src="./images/New Job _ Promotion _ Own Business _ Dream Home _ Strong Family _ Healthy Lifestyle _ Dream Vacation.jpg" class="card-img-top "style="height:36vh;" alt="...">
+              <div class="card-body">
+                <h6 class="card-title fw-bold text-center">Autem sunt earum</h6>
+                <p class="card-text text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Nobis itaque
+                  doloribus ipsum perferendis dolore, velit fugiat.</p>
+                <button type="button" class="btn btn-sm mt-2 border-2 border-success rounded-4"
+                  style=" background: none; width: 35%; margin-left: 100px;">Explore More</button>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card h-100 border-0 shadow-lg rounded-0">
+              <img src="./images/Software Consulting and Development Company.jpg" style="height:36vh;" class="card-img-top" alt="...">
+              <div class="card-body">
+                <h6 class="card-title fw-bold text-center">Nobis et tempore</h6>
+                <p class="card-text text-center">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iusto cum saepe
+                  laudantium omnis.</p>
+                <button type="button" class="btn btn-sm mt-2 border-2 border-success rounded-4"
+                  style=" background: none; width: 35%; margin-left: 100px;">Explore More</button>
+              </div>
+            </div>
+          </div>
+          <div class="col">
+            <div class="card h-100 border-0 rounded-0 shadow-lg">
+              <img src="./images/Seguro de RC em xeque no Brasil.jpg" class="card-img-top" style="height:36vh;" alt="...">
+              <div class="card-body">
+                <h6 class="card-title fw-bold text-center">Facere quia quae dolores</h6>
+                <p class="card-text text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Optio cupiditate
+                  aspernatur aliquam distinctio sit!</p>
+                <button type="button" class="btn btn-sm mt-2 border-2 border-success rounded-4"
+                  style=" background: none; width: 35%; margin-left: 120px;">Explore More</button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section>
+        <div class="container my-5">
+          <div class="row align-items-center">
+            <div class="col-md-6">
+              <h4>Eum ipsam loborum deleneti <span class="fw-bold">velit pariatur architecto aut nihil</span></h4>
+              <p class="text-muted">Lorem ipsum dolor sit amet consectetur adipisicing elit. Sint debitis dignissimos
+                ducimus eveniet, doloribus libe</p>
+              <div class="accordion my-3">
+                <div class="accordion-item" style="border: none;">
+                  <h2 class="accordion-header" id="headingOne">
+                    <button class="accordion-button" style="background-color: #F2F5F4;" type="button"
+                      data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="true"
+                      aria-controls="collapseOne">
+                      <span class="text-success"> <span style="color: red;">01</span> Non consectetur a erat nam at lectus
+                        urna duis?</span>
                     </button>
-                </div>
-                <div>
-                    <div class="collapse navbar-collapse" id="navbarNavDropdown">
-                        <ul class="navbar-nav">
-                            <li class="nav-item">
-                                <a class="nav-link active" aria-current="page" href="#">HOME</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">ABOUT US</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">SERVICES</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">PORTFOLIO</a>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">TEAM</a>
-                            </li>
-                            <li class="nav-item dropdown">
-                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown"
-                                    aria-expanded="false">
-                                    DROP DOWN
-                                </a>
-                                <ul class="dropdown-menu">
-                                    <li><a class="dropdown-item" href="#">Action</a></li>
-                                    <li><a class="dropdown-item" href="#">Another action</a></li>
-                                    <li><a class="dropdown-item" href="#">Something else here</a></li>
-                                </ul>
-                            </li>
-                            <li class="nav-item">
-                                <a class="nav-link" href="#">CONTACT</a>
-                            </li>
-                        </ul>
+                  </h2>
+                  <div id="collapseOne" class="accordion-collapse collapse show" aria-labelledby="headingOne">
+                    <div class="accordion-body" style="background-color: #F2F5F4;">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequuntur quibusdam ipsum expedita
+                      deleniti. Placeat?
                     </div>
+                  </div>
                 </div>
+              </div>
+              <div class="accordion my-3">
+                <div class="accordion-item" style="border: none;">
+                  <h2 class="accordion-header" id="headingTwo">
+                    <button class="accordion-button text-black" style="background-color: #F2F5F4;" type="button"
+                      data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false"
+                      aria-controls="collapseTwo">> Feugiat scelersique varius morbi enim nunc?</button>
+                  </h2>
+                  <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo">
+                    <div class="accordion-body"></div>
+                  </div>
+                </div>
+              </div>
+              <div class="accordion">
+                <div class="accordion-item" style="border: none;">
+                  <h2 class="accordion-header" id="headingThree">
+                    <button class="accordion-button text-black text-dark" style="background-color: #F2F5F4;" type="button"
+                      data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false"
+                      aria-controls="collapseThree"> <span style="color: red;">03</span> Doloe sit amet consectetur
+                      adipiscing elit?</button>
+                  </h2>
+                  <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree">
+                    <div class="accordion-body"></div>
+                  </div>
+                </div>
+              </div>
             </div>
-        </nav>
-    </section>
-    <section>
-        <div class="text-center justify-content-center pt-5">
-            <h2>ABOUT US</h2>
-            <p class="px-5">Lorem ipsum dolor sit amet consectetur adipisicing elit. Doloribus nobis ut cum facilis enim
-                eius alias
-                architecto eveniet reprehenderit eligendi minus numquam, animi blanditiis doloremque laudantium
-                laboriosam
-                quod quas? Libero!</p>
+            <div class="col-md-6">
+              <img src="./images/Seguro de RC em xeque no Brasil.jpg" style="height:61vh;" alt="">
+            </div>
+          </div>
         </div>
-        <div class="row">
-            <div class="col-lg-6 col-md-12 col-sm-12">
-                <img src="./images/New Job _ Promotion _ Own Business _ Dream Home _ Strong Family _ Healthy Lifestyle _ Dream Vacation.jpg"
-                    alt="">
+      </section>
+      <section class="bg-body-secondary">
+        <div class="container py-5 bg-body-secondary">
+          <h3 class="text-center fw-bold">OUR PORTFOLIO</h3>
+          <p class="text-center text-muted">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Qui, architecto atque.
+            Voluptates quisquam quos amet labore inventore consectetur illum distinctio sunt vel nulla. Accusantium eius
+            consequuntur minima laboriosam.</p>
+          <div class="text-center mb-4  d-flex">
+            <div class="">
+              <ul class=" ">
+                <li class=" d-flex"><a href="All">ALL</a></li>
+                <li class=" d-flex"><a href="App">APP</a></li>
+                <li class=" d-flex"><a href="Card">CARD</a></li>
+                <li class=" d-flex"><a href="Web">WEB</a></li>
+              </ul>
             </div>
-            <div class="col-lg-6 col-md-12 col-sm-12">
-                <h2>Voluptatem dignissimos provident quasi corporis voluptates</h2>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Possimus eaque nesciunt vero libero impedit
-                    su eos esse dolorem perspiciatis quidem.</p>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Exercitationem, quaerat asperiores
-                    reiciendis ratione dignissimos rem officiis nisi velit ad ipsa, incidunt site unde iusto deleniti
-                    ipsam, repellendus ad. Lorem ipsum dolor sit amet.</p>
-                <div class="">
-                    <div>HTML</div>
-                    <div>100%</div>
-                    <div class="progress" role="progressbar" aria-label="Example with label" aria-valuenow="100"
-                        aria-valuemin="0" aria-valuemax="100" >
-                        <div class="progress-bar" style="width: 100%">100%</div>
-                    </div>
-                </div>
-                <div class="">
-                    <div>HTML</div>
-                    <div class="">100%</div>
-                    <div class="progress" role="progressbar" aria-label="Example with label" aria-valuenow="90"
-                        aria-valuemin="0" aria-valuemax="100">
-                        <div class="progress-bar" style="width: 90%">90%</div>
-                    </div>
-                    <div class="">
-                        <div>HTML</div>
-                        <div>100%</div>
-                        <div class="progress" role="progressbar" aria-label="Example with label" aria-valuenow="25"
-                            aria-valuemin="0" aria-valuemax="100">
-                            <div class="progress-bar" style="width: 75%">75%</div>
-                        </div>
-                        <div class="">
-                            <div>HTML</div>
-                            <div>100%</div>
-                            <div class="progress" role="progressbar" aria-label="Example with label" aria-valuenow="25"
-                                aria-valuemin="0" aria-valuemax="100">
-                                <div class="progress-bar" style="width: 55%">55%</div>
-                            </div>
-                        </div>
-                    </div>
-    </section>
-    <section>
-        <div class="container-fluid row mt-5 mx-5 text-bg-secondary p-3">
-            <div class="card col-lg-3 col-md-6 col-sm-12  ">
-                <div class="card-body ">
-                   
-                    <h5  class="card-title"> <i class="fa-regular fa-face-smile"></i>232</h5>
-                    <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                    <a href="#" class="btn btn-primary">Button</a>
-                </div>
+          </div>
+          <div class="row g-4 ms-5" style="width: 80vw;">
+            <div class="col-sm-6 col-md-4">
+              <div class="card border-0">
+                <img src="./images/New Job _ Promotion _ Own Business _ Dream Home _ Strong Family _ Healthy Lifestyle _ Dream Vacation.jpg" style="height: 60vh;" alt="">
+              </div>
             </div>
-            <div class="card col-lg-3 col-md-6 col-sm-12">
-                <div class="card-body">
-                    <h5 class="card-title"><i class="fa-solid fa-file-contract"></i>521</h5>
-                    <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                    <a href="#" class="btn btn-primary">Button</a>
-                </div>
+            <div class="col-sm-6 col-md-4">
+              <div class="card border-0">
+                <img src="./images/Seguro de RC em xeque no Brasil.jpg" style="height: 60vh;" alt="">
+              </div>
             </div>
-            <div class="card col-lg-3 col-md-6 col-sm-12">
-                <div class="card-body">
-                    <h5 class="card-title"><i class="fa-solid fa-music"></i>1463</h5>
-                    <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                    <a href="#" class="btn btn-primary">Button</a>
-                </div>
+            <div class="col-sm-6 col-md-4">
+              <div class="card border-0">
+                <img src="./images/Software Consulting and Development Company.jpg" style="height: 60vh;" alt="">
+              </div>
             </div>
-            <div class="card col-lg-3 col-md-6 col-sm-12">
-                <div class="card-body">
-                    <h5 class="card-title"><i class="fa-solid fa-user-group"></i>15</h5>
-                    <p class="card-text">With supporting text below as a natural lead-in to additional content.</p>
-                    <a href="#" class="btn btn-primary">Button</a>
-                </div>
+            <div class="col-sm-6 col-md-4">
+              <div class="card border-0">
+                <img src="./images/New Job _ Promotion _ Own Business _ Dream Home _ Strong Family _ Healthy Lifestyle _ Dream Vacation.jpg" style="height: 60vh;" alt="">
+              </div>
             </div>
+            <div class="col-sm-6 col-md-4">
+              <div class="card border-0">
+                <img src="./images/Seguro de RC em xeque no Brasil.jpg" style="height: 60vh;" alt="">
+              </div>
+            </div>
+            <div class="col-sm-6 col-md-4">
+              <div class="card border-0">
+                <img src="./images/Software Consulting and Development Company.jpg" style="height: 60vh;" alt="">
+              </div>
+            </div>
+            <div class="col-sm-6 col-md-4">
+              <div class="card border-0">
+                <img src="./images/Software Consulting and Development Company.jpg" style="height: 60vh;" alt="">
+              </div>
+            </div>
+            <div class="col-sm-6 col-md-4">
+              <div class="card border-0">
+                <img src="./images/New Job _ Promotion _ Own Business _ Dream Home _ Strong Family _ Healthy Lifestyle _ Dream Vacation.jpg" style="height: 60vh;" alt="">
+              </div>
+            </div>
+            <div class="col-sm-6 col-md-4">
+              <div class="card border-0">
+                <img src="./images/Seguro de RC em xeque no Brasil.jpg" style="height: 60vh;" alt="">
+              </div>
+            </div>
+          </div>
         </div>
-    </section>
-    <!-- <section>
-        <div class="card col-lg-3 col-md-6 col-sm-12 " style="width: 18rem;">
-            <div class="card-body">
-              <h5 class="card-title">Card title</h5>
-              <h6 class="card-subtitle mb-2 text-body-secondary">Card subtitle</h6>
-              <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-              <a href="#" class="card-link">Card link</a>
-              <a href="#" class="card-link">Another link</a>
+      </section>
+      <section>
+        <div class="container py-5">
+          <h3 class="text-center fw-bold mb-4">OUR TEAM</h3>
+          <p class="text-center text-muted mb-5">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Qui, architecto
+            atque. Voluptates quisquam quos amet labore inventore consectetur illum distinctio sunt vel nulla. Accusantium
+            eius consequuntur minima laboriosam.</p>
+          <div class="row justify-content-center">
+            <div class="col-sm-6 col-md-3 mb-4">
+              <div class="card h-100 border-0 shadow-sm">
+                <img src="./images/Software Consulting and Development Company.jpg" style="height: 55vh;" alt="">
+              </div>
             </div>
+            <div class="col-sm-6 col-md-3 mb-4">
+              <div class="card h-100 border-0 shadow-sm">
+                <img src="./images/New Job _ Promotion _ Own Business _ Dream Home _ Strong Family _ Healthy Lifestyle _ Dream Vacation.jpg" style="height: 55vh;" alt="">
+              </div>
+            </div>
+            <div class="col-sm-6 col-md-3 mb-4">
+              <div class="card h-100 border-0 shadow-sm">
+                <img src="./images/Seguro de RC em xeque no Brasil.jpg" style="height: 55vh;" alt="">
+              </div>
+            </div>
+          </div>
         </div>
-    </section> -->
+      </section>
+      <section>
+        <section class="bg-body-secondary">
+          <div class="container py-6 bg-body-secondary">
+            <h3 class="text-center fw-bold">CONTACT US</h3>
+            <p class="text-center text-muted">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Qui, architecto
+              atque. Voluptates quisquam quos amet labore inventore consectetur illum distinctio sunt vel nulla. Accusantium
+              eius consequuntur minima laboriosam.</p>
+            <div class="row">
+              <div class="col-md-5 mb-4">
+                <h5><i class="fas fa-map-marker text-success me-2"></i>ADDRESS</h5>
+                <p>1234 Main Street, New York, NY 12345</p>
+              </div>
+              <div class="col-md-5 mb-4">
+                <h5><i class="fas fa-map-marker text-success me-2"></i>CALL US</h5>
+                <p>+1 5589 55488 55<br>+1 5589 22548 64</p>
+              </div>
+              <div class="col-md-5 mb-4">
+                <h5><i class="fas fa-map-marker text-success me-2"></i>EMAIL US</h5>
+                <p>contact@example.com</p>
+              </div>
+              <div class="col-md-4 mb-4">
+                <h5><i class="fas fa-map-marker text-success me-3"></i>WORKING HOURS</h5>
+                <p>Mon - Fri: 9AM to 1PM</p>
+              </div>
+              <div class="col-md-5">
+                <form action="">
+                  <div class="row mb-4">
+                    <div class="col-md-6">
+                      <label for="text">Name</label> <br>
+                      <input type="text" placeholder="Your Name" required>
+                    </div>
+                    <div class="col-md-6">
+                      <label for="text">Email</label> <br>
+                      <input type="email" placeholder="Your Email" required>
+                    </div>
+                    <div class="mb-4">
+                      <div class="col-md-6">
+                        <label for="text">Subject</label> <br>
+                        <input type="text" placeholder="Subject" required>
+                      </div>
+                    </div>
+                    <div class="mb-3">
+                      <label for="textarea">Message</label> <br>
+                      <textarea rows="6" cols="33" id=""></textarea>
+                    </div>
+                    <div>
+                      <button type="submit" class="btn border-success rounded-2 border-2">Send Message</button>
+                    </div>
+                  </div>
+                </form>
+              </div>
+            </div>
+          </div>
+        </section>
+    
+    
+     
+        
+    <!-- about us ends here -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+        crossorigin="anonymous"></script>
+
 </body>
 
 </html>
